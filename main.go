@@ -78,36 +78,3 @@ func main() {
 	}
 
 }
-
-// func getCSVData(url string) ([]Anomalies, error) {
-// 	// OpenCSV file
-// 	// file, err := os.Open(nasagta_csv)
-// 	resp, err := http.Get(url)
-// 	if err != nil {
-// 		return nil, err
-// 	}
-// 	// defer file.Close()
-// 	defer resp.Body.Close()
-
-// 	// Create a CSV reader
-// 	readr := csv.NewReader(resp.Body)
-// 	// readr := csv.NewReader(file)
-// 	readr.FieldsPerRecord = -1 // disable FilesPerRecord test
-
-// 	// Read all CSV records
-// 	recs, err := readr.ReadAll()
-// 	if err != nil {
-// 		panic(err)
-// 	}
-
-// 	anmly := new(Anomalies)
-// 	for i := 1; i < len(recs); i++ {
-// 		// fmt.Println(records[i][0:13])
-// 		for j := 1; j < 13; j++ {
-// 			anmly.Year = recs[i][0]
-// 			anmly.Month = recs[0][j]
-// 			anmly.Mean = recs[i][j]
-// 		}
-// 	}
-// 	return anmly, nil
-// }
