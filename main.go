@@ -65,7 +65,7 @@ func main() {
 
 			anomalies = append(anomalies, Anomalies{
 				Year:  year,
-				Month: records[1][j], // Month name from the first row
+				Month: records[1][j], // Month name taken from the first row
 				Mean:  mean,
 			})
 		}
